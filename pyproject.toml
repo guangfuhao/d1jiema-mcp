@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "d1jiema-mcp"
+version = "0.1.0"
+description = "D1Jiema SMS API MCP plugin"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "D1Jiema MCP community"}]
+keywords = ["mcp", "d1jiema", "sms", "phone-verification"]
+dependencies = ["httpx>=0.27,<1", "mcp>=1.6,<2"]
+
+[project.scripts]
+d1jiema-mcp = "d1jiema_mcp.server:main"
+d1jiema-setup-local = "d1jiema_mcp.setup_server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/d1jiema_mcp"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
