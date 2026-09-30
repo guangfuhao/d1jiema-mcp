@@ -1,0 +1,20 @@
+{
+  "name": "d1jiema-mcp",
+  "interface": {
+    "displayName": "D1Jiema Plugins"
+  },
+  "plugins": [
+    {
+      "name": "d1jiema-mcp",
+      "source": {
+        "source": "local",
+        "path": "./../../"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer tools"
+    }
+  ]
+}
