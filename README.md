@@ -4,7 +4,7 @@
 
 ## 一句话安装
 
-> 安装并运行 GitHub 上的 `d1jiema-mcp` 插件；首次使用打开本地 D1Jiema 配置页让我输入 API Token，然后查询余额确认连接。
+> 安装并运行 `d1jiema-mcp` 插件；首次使用打开本地 D1Jiema 配置页让我输入 API Token，然后查询余额确认连接。
 
 ## 首次配置
 

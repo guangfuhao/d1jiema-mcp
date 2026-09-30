@@ -4,7 +4,7 @@
 
 ## One-sentence install
 
-> Install and run the `d1jiema-mcp` plugin from GitHub; on first use open its local D1Jiema setup page so I can enter the API token, then verify the connection with a balance read.
+> Install and run the `d1jiema-mcp` plugin; on first use open its local D1Jiema setup page so I can enter the API token, then verify the connection with a balance read.
 
 ## First-run configuration
 
