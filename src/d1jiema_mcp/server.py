@@ -101,6 +101,13 @@ def d1jiema_setup_local(open_browser: bool = True) -> str:
         return _error(exc)
 
 
+@mcp.tool(name="d1jiema_login", title="Configure D1Jiema token", description="Open the local D1Jiema token configuration flow. D1Jiema creates API tokens from its web personal center.", annotations=ToolAnnotations(readOnlyHint=False, destructiveHint=False, openWorldHint=False))
+def d1jiema_login(open_browser: bool = True) -> str:
+    """Provide the documented login/token setup flow without inventing an undocumented login endpoint."""
+
+    return d1jiema_setup_local(open_browser=open_browser)
+
+
 def _call(method_name: str, **kwargs: Any) -> str:
     client = _client()
     try:

@@ -15,6 +15,7 @@
 ## 能力
 
 - `d1jiema_balance`：查询余额；
+- `d1jiema_login`：打开本地 Token 配置流程（Token 在 D1Jiema 网页个人中心创建）；
 - `d1jiema_get_phone`：按关键词、指定号码、省份、实卡/虚卡/全部取号；
 - `d1jiema_get_sms`：按手机号和关键词取码；
 - `d1jiema_release`：释放号码，需要 `confirm=true`；

@@ -15,6 +15,7 @@ Headless environments can use `D1JIEMA_API_TOKEN` and optionally `D1JIEMA_BASE_U
 ## Capabilities
 
 - `d1jiema_balance`: read account balance;
+- `d1jiema_login`: open the local token setup flow (tokens are created in the D1Jiema web personal center);
 - `d1jiema_get_phone`: acquire a number with optional keyword, exact number, province, and card type;
 - `d1jiema_get_sms`: retrieve a code by phone and keyword;
 - `d1jiema_release`: release a number, requiring `confirm=true`;
