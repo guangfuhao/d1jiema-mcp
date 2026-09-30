@@ -8,7 +8,15 @@
 
 ## 首次配置
 
-插件使用 D1Jiema 网页个人中心创建的 API Token。宿主支持原生设置页时，可直接填写；当前 Codex 本地插件页如果只显示技能，`d1jiema-setup` 会调用 `d1jiema_setup_local`，启动只监听 `127.0.0.1` 的临时配置页。保存后服务自动关闭，Token 写入当前用户的本地配置并设置为 `0600`。
+官方入口：
+
+- [D1Jiema 官方网站](https://www.d1jiema.com/appweb/main.html)
+- [API Token 创建页面](https://www.d1jiema.com/apiCenter.html#)
+- API 基础地址：`https://api.d1jiema.com/zc/data.php`
+
+获取 API Token：打开 [API Token 创建页面](https://www.d1jiema.com/apiCenter.html#)，登录 D1Jiema 后进入【个人中心】→【创建 API Token】，复制生成的 Token。插件使用这个 Token 访问 API，不需要在插件中重复登录账户。
+
+宿主支持原生设置页时，可直接填写；当前 Codex 本地插件页如果只显示技能，`d1jiema-setup` 会调用 `d1jiema_setup_local`，启动只监听 `127.0.0.1` 的临时配置页。保存后服务自动关闭，Token 写入当前用户的本地配置并设置为 `0600`。
 
 无图形界面的环境使用 `D1JIEMA_API_TOKEN`，可选 `D1JIEMA_BASE_URL`。Token 不写入代码、README、GitHub、日志或普通聊天消息。
 

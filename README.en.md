@@ -8,7 +8,15 @@
 
 ## First-run configuration
 
-The plugin uses the API token created in the D1Jiema web personal center. Hosts with native settings can render the token field there. When the current Codex local-plugin page only shows skills, `d1jiema-setup` calls `d1jiema_setup_local`, which starts a temporary form bound to `127.0.0.1`; the service exits after saving and stores the token with `0600` permissions.
+Official links:
+
+- [D1Jiema official website](https://www.d1jiema.com/appweb/main.html)
+- [API Token creation page](https://www.d1jiema.com/apiCenter.html#)
+- API base URL: `https://api.d1jiema.com/zc/data.php`
+
+To obtain an API token, open the [API Token creation page](https://www.d1jiema.com/apiCenter.html#), sign in to D1Jiema, go to **Personal Center → Create API Token**, and copy the generated token. The plugin uses this token for API access and does not need to repeatedly log in through the plugin.
+
+Hosts with native settings can render the token field there. When the current Codex local-plugin page only shows skills, `d1jiema-setup` calls `d1jiema_setup_local`, which starts a temporary form bound to `127.0.0.1`; the service exits after saving and stores the token with `0600` permissions.
 
 Headless environments can use `D1JIEMA_API_TOKEN` and optionally `D1JIEMA_BASE_URL`. The token is never written to source, README files, GitHub, logs, or ordinary chat messages.
 
